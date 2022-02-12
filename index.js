@@ -13,7 +13,7 @@ const fs = require('fs').promises;
         return {
             website: element.replaceAll(/\s/gi, ''),
             statusCode: null,
-            aTagsOrGtBtnLink: null,
+            htmlATags: null,
             error: 'no error'
         }
     });
@@ -55,9 +55,9 @@ const fs = require('fs').promises;
                     })
                 ));
                 if (links.length > 0) {
-                    websites[i].aTagsOrGtBtnLink = links;
+                    websites[i].htmlATags = links;
                 } else {
-                    websites[i].aTagsOrGtBtnLink = 'no button/links found';
+                    websites[i].htmlATags = 'no links found';
                 }
             }
         } catch (err) {
