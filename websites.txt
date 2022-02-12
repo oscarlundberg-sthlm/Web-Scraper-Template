@@ -1,3 +1,6 @@
-example1.com
-example2.com
-example3.com
+these-are.com
+websites-copied.com
+from-an-excel-column.com
+example4.com
+example5.com
+example6.com
